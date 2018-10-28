@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display</title>
+    <link rel="stylesheet" href="css\materialize.css">
+    <link rel="stylesheet" href="css\custom.css">
+    <style>
+        body{
+            background-color: rgba(177, 140, 127, 0.76);
+            /* background-color: #f7b733 */
+        }
+        #display-area{
+            color: white;
+        }
+        .todo{
+            border: 1px solid white;
+            text-indent: 40px;
+            height: auto;
+            width: 700px;
+            /* background-color:#373737c7; */
+            margin-bottom: 10px;
+            padding: 35px;
+            border-radius: 5px;
+            /* border: 0.5px solid white; */
+        }
+        #crt-btn{
+            float: right;
+            height: 30px;
+            width: 80px;
+            font-size: 12px;
+        }
+        #crt-btn > a{
+           color: white;
+        }
+        .display{
+            /* border: 1px solid teal; */
+            margin: 2px auto;
+        }
+        .title{
+            color: white;
+            font-size: 24px;
+        }
+        .desc{
+            color: black;
+            font-weight: bold;
+            
+        }
+        .cstm{
+            margin: 3px 0;
+           }
+
+    </style>
+</head>
+<body onload="display();">
+   <div class="row">
+    <!-- First Column | Side Nav    -->
+        <div class="col s4">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a><h5>My ToDo Application</h5></a></li>
+            <br>
+            <br>
+            <div class="container">
+                    <li><a href="index.html"><img src="images/task.png" height="25"> &nbsp; All ToDos</a></li>
+                    <li><a href="create.html"><img src="images/create.png" height="20">&nbsp;&nbsp;&nbsp; Create</a></li>
+                    <li><a href="Edit.html"><img src="images/resume.png" height="25">&nbsp;&nbsp; Edit</a></li>
+                    <li><a href="display.html"><img src="images/resume.png" height="25">&nbsp;&nbsp; Display</a></li>
+            </div>
+        </ul>
+        <!-- Second Column | Display Area -->
+        </div>
+        <div id="display-area" class="col s8">
+            <br>
+            <h4 style="color:teal">Your todo</h4>
+            <br>
+            <div id="todo5" class="todo">
+            
+            <div class="display" >
+                    <p class="title" style="color:teal">Title</p>
+                    <p class="desc" id="title" style="color:white">Hello</p>
+                    
+            </div>
+            <div class="display" >
+                    <p class="title" style="color:teal">Location</p>
+                    <p class="desc" id="location" style="color:white">Hello</p>
+                    
+            </div>
+            <div class="display" >
+                    <p class="title" style="color:teal">Description</p>
+                    <p class="desc" id="description" style="color:white">Hello</p>
+                    
+            </div>
+            <div>
+                <button class="btn block btn-normal cstm" onclick="location.href='index.html';">Back</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Floating Button -->
+   <div  class="fixed-action-btn">
+       <a href="create.html" class="btn-floating btn-mdeium">+</a>
+   </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/display.js"></script>
+</body>
+</html>

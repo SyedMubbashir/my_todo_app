@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All Todos</title>
+    <link rel="stylesheet" href="css\materialize.css">
+    <link rel="stylesheet" href="css\custom.css">
+    <style>
+        body {
+            background-color: rgb(185, 122, 122);
+
+            /* background-color: #f7b733 */
+        }
+
+        #display-area {
+            color: white;
+        }
+
+        .todo {
+            text-indent: 40px;
+            height: auto;
+            width: 700px;
+            background-color: #373737c7;
+            margin-bottom: 10px;
+            padding: 35px;
+            border-radius: 5px;
+            border: 0.5px solid white;
+        }
+
+        #crt-btn {
+            float: right;
+            height: 30px;
+            width: 80px;
+            font-size: 12px;
+        }
+
+        #crt-btn>a {
+            color: white;
+        }
+
+        .style {
+            margin: 10px 0 10px 0 !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            height: 60px !important;
+        }
+        .btnDiv {
+        width: 50%;
+        margin: 0 !important;
+        float: left;
+        height: 50px;
+        padding-top: 7px !important;
+        cursor: pointer;
+        }
+        .paragraph{
+            margin: 0;
+            
+        }
+        .custombutton {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    height: 40px !important;
+    margin-left: 10px !important;
+    background: #736b6bf5;
+}
+    </style>
+</head>
+
+<body onload="show();">
+    <div class="row">
+        <!-- First Column | Side Nav    -->
+        <div class="col s4">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li><a>
+                        <h5>My ToDo Application</h5>
+                    </a></li>
+                <br>
+                <br>
+                <div class="container">
+                    <li><a href="index.html"><img src="images\task.png" height="25"> &nbsp; All ToDos</a></li>
+                    <li><a href="create.html"><img src="images\create.png" height="20">&nbsp;&nbsp;&nbsp; Create</a></li>
+                    <li><a href="Edit.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Edit</a></li>
+                    <li><a href="display.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Display</a></li>
+                </div>
+            </ul>
+            <!-- Second Column | Display Area -->
+        </div>
+        <div id="display-area" class="col s8">
+            <br>
+            <h4 style="color:teal">Your ToDos</h4>
+
+            <div id="show" class="todo">
+
+            </div>
+            <!-- Empty  -->
+            <!-- <button id="crt-btn" class="btn waves-effect waves-light" type="submit" name="action"> -->
+            <!-- <a href="create.html">Create</a></button> -->
+        </div>
+    </div>
+
+
+    <!-- Floating Button -->
+    <div class="fixed-action-btn">
+        <a href="create.html" class="btn-floating btn-mdeium">+</a>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
